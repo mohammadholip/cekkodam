@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Khodam</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="baground">
+      <img src="foto/macan.jpg" alt="" style="height: 800px; width: 1000px" />
+    </div>
+    <div class="card">
+      <h1 class="title">
+        Cek Khodam Kamu
+        <p class="p1">Masukkan nama untuk mengetahui khodam</p>
+      </h1>
+
+      <input type="text" id="nameInput" placeholder="Ketik nama kamu di sini" />
+      <button onclick="cekKhodam()">Cek Khodam</button>
+      <div id="loading" class="loading-spinner" style="display: none"></div>
+      <button onclick="resetForm()" style="margin-top: 20px">Cek Lagi</button>
+      <div id="result">
+        <h2 id="khodamName"></h2>
+        <p id="khodamMeaning"></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
